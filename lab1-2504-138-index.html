@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>美丽校园-春华</title>
+    <style>
+        .img-box {
+            width: 220px;
+            height: 220px;
+            margin-left: 50px;
+            display: inline-block;
+            margin-right: 20px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .img-box img:hover {
+            transform: scale(1.05);
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: "Microsoft Yahei", sans-serif;
+            line-height: 1.8;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 3px solid #27ae60;
+            padding-bottom: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: #34495e;
+            font-weight: normal;
+        }
+        h3 {
+            color: #27ae60;
+            border-left: 4px solid #27ae60;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+        p {
+            text-indent: 2em;
+            color: #555;
+            font-size: 16px;
+        }
+        ul {
+            margin-left: 50px;
+            color: #555;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. 一级标题+二级作者信息 -->
+    <h1>美丽校园-春华</h1>
+    <h2>作者：ilin2468 &nbsp;&nbsp; 学号：138</h2>
+    <hr>
+
+    <!-- 2. 自然风光（h3标题+p段落，每段≥300字） -->
+    <h3 id="nature">自然风光</h3>
+    <p>
+        春日的校园，是被春风唤醒的诗意天地。漫步在教学楼旁的步道上，道路两侧的西府海棠正开得热烈，粉白相间的花朵缀满枝头，风一吹便簌簌落下，铺成一条浪漫的花径。
+        高大的圆柏苍劲挺拔，与盛放的海棠相映成趣，为校园增添了一抹沉稳的绿意。远处的水杉抽出嫩黄的新叶，在蓝天的映衬下愈发挺拔，像是守护校园的卫士。
+        春日的阳光透过枝叶洒在步道上，光影斑驳，空气中满是清甜的花香，每一次呼吸都能感受到春天的温柔。无论是清晨的薄雾，还是傍晚的余晖，春日的校园都有着不一样的美感，
+        让人沉醉其中，流连忘返。
+        <br><br>
+        除了繁花与绿树，校园的春日更有青春的气息。同学们或在步道上漫步，或在树下背书，或用镜头记录下春日的美好，欢声笑语与鸟鸣风声交织在一起，
+        构成了校园最动人的春日交响曲。湖边的草坪上，嫩绿的草芽从土里钻出，点缀着星星点点的小野花，为校园添上了勃勃生机。
+        春日的校园，不仅有视觉上的享受，更有心灵上的治愈，每一处风景都藏着青春的故事，每一缕春风都带着成长的希望。
+    </p>
+    <hr>
+
+    <!-- 3. 人文景观（h3标题+无序列表+锚点跳转） -->
+    <h3 id="humanity">人文景观</h3>
+    <p>
+        校园的人文景观，承载着学校的历史与文化，是校园精神的具象化体现。从古朴的教学楼到现代化的过街天桥，从藏书丰富的图书馆到充满活力的校园步道，
+        每一处建筑都诉说着学校的发展与传承，见证着一届又一届学子的青春与成长。
+    </p>
+    <!-- 无序列表+锚点跳转 -->
+    <ul>
+        <li><a href="#building">主教学楼</a></li>
+        <li><a href="#bridge">过街天桥</a></li>
+        <li><a href="#path">校园步道</a></li>
+    </ul>
+    <p>
+        <h4 id="building">主教学楼</h4>
+        主教学楼是校园的标志性建筑，米白色的外墙搭配红色的屋顶，典雅大气，拱形的窗户与高耸的塔楼彰显着独特的建筑风格。
+        楼内灯火通明，教室里同学们认真听讲，自习室里座无虚席，浓厚的学习氛围感染着每一个人，是同学们求知探索的核心阵地。
+        <br><br>
+        <h4 id="bridge">过街天桥</h4>
+        过街天桥连接着校园的南北两区，银色的护栏与灰白的桥身，成为校园里一道独特的风景线。同学们穿梭在天桥上，往来于教学楼与宿舍之间，
+        天桥不仅是交通枢纽，更是同学们日常交流、欣赏校园风景的绝佳场所，承载着无数青春的足迹。
+        <br><br>
+        <h4 id="path">校园步道</h4>
+        校园步道是同学们日常出行的必经之路，两侧绿树成荫、繁花盛开，干净整洁的路面与错落有致的绿植，营造出舒适宜人的校园环境。
+        步道旁的教学楼、宣传栏、休息区，处处彰显着校园的人文关怀，是同学们校园生活的重要组成部分。
+    </p>
+    <hr>
+
+    <!-- 4. 图片展示（div容器，3张实拍图，均匀横排） -->
+    <h3 id="gallery">校园实拍</h3>
+    <div class="img-box">
+        <img src="campus1.jpg" alt="春日海棠步道">
+    </div>
+    <div class="img-box">
+        <img src="campus2.jpg" alt="校园松柏水杉">
+    </div>
+    <div class="img-box">
+        <img src="campus3.jpg" alt="主教学楼与天桥">
+    </div>
+</body>
+</html>
