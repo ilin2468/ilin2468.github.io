@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>校园春韵数字展销平台</title>
+    <!-- 引入外部CSS样式表 -->
+    <link rel="stylesheet" href="css/lab2-班号-学号后3位-index.css">
+</head>
+<body>
+    <!-- 1. 头部区域：Logo + 导航菜单（固定+浮动布局） -->
+    <header id="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="校园春韵Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">春景展区</a></li>
+                <li><a href="#">校园文创</a></li>
+                <li><a href="#">热门推荐</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. 主体内容区：三栏浮动布局 -->
+    <main id="main">
+        <!-- 2.1 左侧栏：分类导航（相对定位） -->
+        <aside id="left">
+            <h3>春景分类</h3>
+            <ul>
+                <li><a href="#">教学楼春景</a></li>
+                <li><a href="#">海棠花道</a></li>
+                <li><a href="#">校园步道</a></li>
+                <li><a href="#">天桥暮色</a></li>
+                <li><a href="#">文创周边</a></li>
+            </ul>
+        </aside>
+
+        <!-- 2.2 中间栏：核心内容区 -->
+        <section id="center">
+            <!-- 2.2.1 春景展示区（第一排第一列鼠标悬停效果+父子盒子） -->
+            <div class="spring-show">
+                <h2>精选春景</h2>
+                <div class="show-list">
+                    <!-- 春景项1（第一排第一列，悬停特效） -->
+                    <div class="show-item">
+                        <img src="img/spring1.jpg" alt="天桥暮色春景">
+                        <p class="item-title">天桥暮色 · 春韵初临</p>
+                        <p class="item-desc">连廊载暮色，花木赴春约</p>
+                    </div>
+                    <!-- 春景项2 -->
+                    <div class="show-item">
+                        <img src="img/spring2.jpg" alt="校园步道春景">
+                        <p class="item-title">海棠花道 · 满径芬芳</p>
+                        <p class="item-desc">海棠开遍步道，春韵漫入校园</p>
+                    </div>
+                    <!-- 春景项3 -->
+                    <div class="show-item">
+                        <img src="img/spring3.jpg" alt="教学楼春景">
+                        <p class="item-title">教学楼前 · 春、‘、、满校园</p>
+                        <p class="item-desc">红瓦映新绿，风遇海棠开</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2.2.2 热门推荐（浮动排列） -->
+            <div class="hot-recommend">
+                <h2>热门推荐</h2>
+                <div class="recommend-list">
+                    <div class="recommend-item">
+                        <img src="img/hot1.jpg" alt="校园文创">
+                        <p>校园春韵主题明信片</p>
+                    </div>
+                    <div class="recommend-item">
+                        <img src="img/hot2.jpg" alt="海棠摄影">
+                        <p>海棠花道高清摄影集</p>
+                    </div>
+                    <div class="recommend-item">
+                        <img src="img/hot3.jpg" alt="天桥海报">
+                        <p>天桥春景主题海报</p>
+                    </div>
+                    <div class="recommend-item">
+                        <img src="img/hot4.jpg" alt="校园日历">
+                        <p>2026校园春韵日历</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2.2.3 新品上市（Table布局） -->
+            <div class="new-product">
+                <h2>新品上市</h2>
+                <table border="1" cellpadding="10" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>产品名称</th>
+                            <th>规格</th>
+                            <th>价格</th>
+                            <th>上市时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>校园春韵主题帆布袋</td>
+                            <td>40*35cm</td>
+                            <td>¥29.9</td>
+                            <td>2026-04</td>
+                        </tr>
+                        <tr>
+                            <td>海棠花道书签套装</td>
+                            <td>4枚/套</td>
+                            <td>¥19.9</td>
+                            <td>2026-04</td>
+                        </tr>
+                        <tr>
+                            <td>天桥暮色手机壳</td>
+                            <td>全机型适配</td>
+                            <td>¥39.9</td>
+                            <td>2026-04</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 2.3 右侧栏：促销信息（固定定位） -->
+        <aside id="right">
+            <div class="promo-box">
+                <h3>限时促销</h3>
+                <p>全场文创满59减10</p>
+                <p>新用户首单立减5元</p>
+                <a href="#" class="btn">立即抢购</a>
+                <!-- 悬浮隐藏/显示彩蛋：鼠标悬停显示 -->
+                <div class="hidden-tip">
+                    <p>关注公众号领取专属优惠券</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 3. 底部区域 -->
+    <footer id="footer">
+        <p>©2026 校园春韵数字展销平台 版权所有 | 隐私政策 | 服务条款</p>
+    </footer>
+</body>
+</html>
